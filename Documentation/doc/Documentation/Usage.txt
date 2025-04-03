@@ -2,7 +2,7 @@
 \page usage Using %CGAL on Unix (Linux, macOS, ...)
 \cgalAutoToc
 
-Since \cgal version 5.0, \cgal is header-only be default, which means
+Since \cgal version 5.0, \cgal is header-only by default, which means
 that there is <b>no need to build \cgal before it can be used</b>.
 However, some dependencies of \cgal might still need to be installed.
 
@@ -180,7 +180,7 @@ all the required dependencies. This typically happens if you have installed depe
 at non-standard locations.
 Although the command line tool `cmake` accepts CMake variables as arguments of the form
 `-D<VAR>:<TYPE>=<VALUE>`, this is only useful if you already know which variables
-need to be explicitly defined. or this reason, the simplest way to manually set the missing variables
+need to be explicitly defined. For this reason, the simplest way to manually set the missing variables
 is to run the graphical user interface of CMake, `cmake-gui`.
 
     cd CGAL-\cgalReleaseNumber/examples/Triangulation_2
@@ -225,7 +225,7 @@ learn how to specify their dependencies.
 
 \subsection usage_configuring_advanced_cmake Advanced Configuration Options
 
-CMake keeps the variables that a user can manipulate in a so-called CMake cache, a simple text file
+CMake stores user-configurable variables in a file called the CMake cache (CMakeCache.txt), which is a simple text file
 named `CMakeCache.txt`, whose entries are of the form `VARIABLE:TYPE=VALUE`. Advanced users can manually
 edit this file, instead of going through the interactive configuration session.
 
